@@ -121,6 +121,12 @@
       color: var(--muted);
       font-size: 0.92rem;
     }
+    .gallery-title { font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 1.3rem; margin: 2rem 0 1rem; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 1rem; }
+    .gallery figure { margin: 0; background: var(--card); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+    .gallery img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+    .gallery figcaption { padding: 0.65rem 0.9rem 0.8rem; font-size: 0.92rem; color: var(--muted); }
+    footer .origin { font-style: italic; }
   </style>
 </head>
 <body>
@@ -151,6 +157,25 @@
           <h3>Operator, not a marketplace</h3>
           <p>We do the work: find the building, run the rehab, house the residents, and report to partners. Small commercial and apartments, done in person.</p>
         </article>
+      </div>
+      <h3 class="gallery-title">Our work</h3>
+      <div class="gallery">
+        <figure>
+          <img src="images/projects/herndon-exterior.jpg" alt="White two-story house with a front porch, teal front door, and new wood railings" loading="lazy" />
+          <figcaption>Herndon Ave: exterior refresh</figcaption>
+        </figure>
+        <figure>
+          <img src="images/projects/herndon-entry-hall.jpg" alt="Entry hall with a staircase, dark wood trim, and plank flooring" loading="lazy" />
+          <figcaption>Herndon Ave: entry hall</figcaption>
+        </figure>
+        <figure>
+          <img src="images/projects/beckham-basement-bedroom.jpg" alt="Finished basement bedroom with gray walls, dark plank flooring, and a closet" loading="lazy" />
+          <figcaption>Beckham: interior renovation</figcaption>
+        </figure>
+        <figure>
+          <img src="images/projects/state-route-129-exterior.jpg" alt="Brick ranch house with a covered front porch and a gravel drive" loading="lazy" />
+          <figcaption>State Route 129: exterior</figcaption>
+        </figure>
       </div>
       <p class="note">Track record is from projects already described on drbuhler.com. Past results are not a promise of future returns.</p>
     </section>
@@ -185,7 +210,7 @@
     </section>
   </main>
   <footer>
-    Numinor LLC. The name is Lewis’s spelling of the true West: land as a gift to cultivate.
+    Numinor LLC. <span class="origin">Numinor is named after C.S. Lewis’s spelling of Tolkien’s Númenor, the True Western Land. Tolkien reminds us that land is a gift from God to cultivate.</span>
   </footer>
 </body>
 </html>
